@@ -60,11 +60,15 @@
 
 
 //foreach (string names in studentname) {
-    
+
 //    Console.WriteLine(names);
 
 //}
 
+
+
+
+Console.WriteLine("hello aptech students");
 
 
 
