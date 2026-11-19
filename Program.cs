@@ -68,7 +68,42 @@
 
 
 
-Console.WriteLine("hello aptech students");
+//Console.WriteLine("hello aptech students");
+
+
+
+//CLASS & OBJECTS
+
+class student {
+    public string name;
+    public string email;
+
+
+}
+
+public class Program {
+    public static void Main(String[] args) {
+    
+        student obj = new student();
+
+        obj.name = "Jasmin Anjel";
+        obj.email = "jasmin@gmail.com";
+
+        Console.WriteLine(obj.name);
+        Console.WriteLine(obj.email);
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
