@@ -74,24 +74,55 @@
 
 //CLASS & OBJECTS
 
-class student {
-    public string name;
-    public string email;
+
+
+
+
+using System.Net.Http.Headers;
+
+class Student {
+    public string studentname;
+    public string studentemail;
+    public int studentage;
+
+    public void studentaction(string name , string email , int age) {
+
+        this.studentname = name;
+        this.studentemail = email;
+        this.studentage = age;
+
+
+    }
+    public void studentdetail() {
+
+
+        Console.WriteLine("Student Name: "+this.studentname);
+        Console.WriteLine("Student Email: "+this.studentemail);
+        Console.WriteLine("Student Age: "+this.studentage);
+    }
+
 
 
 }
 
 public class Program {
     public static void Main(String[] args) {
-    
-        student obj = new student();
 
-        obj.name = "Jasmin Anjel";
-        obj.email = "jasmin@gmail.com";
+        //student obj = new student();
 
-        Console.WriteLine(obj.name);
-        Console.WriteLine(obj.email);
-    
+        //obj.name = "Jasmin Anjel";
+        //obj.email = "jasmin@gmail.com";
+
+        //Console.WriteLine(obj.name);
+        //Console.WriteLine(obj.email);
+
+        Student obj = new Student();
+
+        obj.studentaction("umair","umair@gmail.com",20);
+        obj.studentdetail();
+
+
+
     }
 }
 
