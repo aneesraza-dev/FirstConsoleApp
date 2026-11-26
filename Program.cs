@@ -80,29 +80,45 @@
 
 using System.Net.Http.Headers;
 
-class Student {
-    public string studentname;
-    public string studentemail;
-    public int studentage;
+//class Student {
+//    public string studentname;
+//    public string studentemail;
+//    public int studentage;
 
-    public void studentaction(string name , string email , int age) {
+//    public void studentaction(string name , string email , int age) {
 
-        this.studentname = name;
-        this.studentemail = email;
-        this.studentage = age;
+//        this.studentname = name;
+//        this.studentemail = email;
+//        this.studentage = age;
 
 
+//    }
+//    public void studentdetail() {
+
+
+//        Console.WriteLine("Student Name: "+this.studentname);
+//        Console.WriteLine("Student Email: "+this.studentemail);
+//        Console.WriteLine("Student Age: "+this.studentage);
+//    }
+
+
+
+//}
+
+class student
+{
+    public student()
+    {
+        Console.WriteLine("this is parameter less constructor !!! ");
     }
-    public void studentdetail() {
-
-
-        Console.WriteLine("Student Name: "+this.studentname);
-        Console.WriteLine("Student Email: "+this.studentemail);
-        Console.WriteLine("Student Age: "+this.studentage);
+    public student(int a, int b)
+    {
+        Console.WriteLine("Your sum is : " + (a + b));
     }
-
-
-
+    public student(string name)
+    {
+        Console.WriteLine("Your Name is : " + name);
+    }
 }
 
 public class Program {
@@ -116,12 +132,15 @@ public class Program {
         //Console.WriteLine(obj.name);
         //Console.WriteLine(obj.email);
 
-        Student obj = new Student();
+        //Student obj = new Student();
 
-        obj.studentaction("umair","umair@gmail.com",20);
-        obj.studentdetail();
+        //obj.studentaction("umair","umair@gmail.com",20);
+        //obj.studentdetail();
 
+        //student obj = new student("jasmin",20);
 
+        student st1 = new student();
+        student st2 = new student("Muhammad Anees");
 
     }
 }
