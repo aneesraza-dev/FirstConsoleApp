@@ -107,18 +107,27 @@ using System.Net.Http.Headers;
 
 class student
 {
-    public student()
-    {
-        Console.WriteLine("this is parameter less constructor !!! ");
+    public static string name;
+    public int age;
+    public string email;
+
+    //public student(string email, int age)
+    //{
+    //    this.age = age;
+    //    this.email = email;
+        
+    //}
+    public student() {
+        name = "Arham";
     }
-    public student(int a, int b)
-    {
-        Console.WriteLine("Your sum is : " + (a + b));
-    }
-    public student(string name)
-    {
-        Console.WriteLine("Your Name is : " + name);
-    }
+    //static student()
+    //{
+    //    name = "Arham";
+    //}
+
+
+
+
 }
 
 public class Program {
@@ -139,8 +148,17 @@ public class Program {
 
         //student obj = new student("jasmin",20);
 
-        student st1 = new student();
-        student st2 = new student("Muhammad Anees");
+        //student st1 = new student("umair@gmail.com",20);
+        //Console.WriteLine(st1.age);
+        //Console.WriteLine(st1.email);
+
+
+        Console.WriteLine(student.name);
+
+        //student st2 = new student("arham@gmail.com", 18);
+        //Console.WriteLine(st2.email);
+        //Console.WriteLine(st2.age);
+        //Console.WriteLine(student.name);
 
     }
 }
